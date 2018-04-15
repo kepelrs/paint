@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Lab: Pixel Art Maker</h1>
+
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="input_height" name="height" min="1" max="40" value="10">
+            Grid Width:
+            <input type="number" id="input_width" name="width" min="1" max="40" value="10">
+            <br><br>
+            <input type="submit" id="createGrid" value = "Create New Grid">
+            <button id="save">Save</button>
+        </form>
+        <hr>
+
+        <h2>Pick A Color</h2>
+        <canvas id="target_canvas" height="50" width="300"></canvas>
+        <br>
+        <input type="color" id="colorPicker">
+
+        <div>
+            <table id="pixel_canvas"></table>
+        </div>
+        <p><em>Left button draws, right button erases.</em></p>
+    </div>
+
+    <!-- jQuery and designs.js file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- canvas color pallete -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- js file for the page -->
+    <script src="designs.js"></script>
+</body>
+</html>

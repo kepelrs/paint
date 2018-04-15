@@ -1,0 +1,6 @@
+*
+!.gitignore
+!index.html
+!styles.css
+!designs.js
+!flask-run.py
